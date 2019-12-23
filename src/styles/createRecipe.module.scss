@@ -1,0 +1,57 @@
+@import "./utilities/variables.scss";
+
+$font-family-title: 'Roboto', sans-serif;
+.container {
+    padding: 40px 0;
+
+    .pageTitle {
+        text-align: center;
+        font-family: $font-family-title;
+        margin-bottom: 30px;
+    }
+    .alertMsg {
+        color: $alert-danger-color;
+    }
+    form.recipeForm {
+
+        .removeElementBtn {
+            border-top-left-radius: 0px !important;
+            border-bottom-left-radius: 0px !important;
+        }
+        
+        .ingredientContainer {
+            .ingredientAmountContainer {
+                label {
+                    margin-bottom: 2px;
+                }
+                margin-bottom: 10px;
+                .ingredientAmount  {
+                    display: flex;
+                    input {
+                        border-top-right-radius: 0;
+                        border-bottom-right-radius: 0;
+                    }
+                }
+            }
+        }
+        .directionContainer {
+            margin-bottom: 22px !important;
+            .directionTitle {
+                font-weight: 600;
+                border: 1px solid red;
+            }
+            .direction {
+                display: flex;
+                margin-bottom: 12px;
+                input {
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                }
+            }
+        }
+        .recipeInputError {
+            border: 0.09rem solid red;
+        }
+        
+    }
+}

@@ -1,0 +1,18 @@
+.profile-container {
+    margin-top: 40px;
+    form {
+        .form-group {
+            input {
+                &:focus {
+                    box-shadow: none;
+                    border-width: 1.5px;
+                }
+            }
+            .input-error {
+                border-color: #fe2d5b;
+                border-width: 1.5px;
+            }
+        }
+        
+    }
+}

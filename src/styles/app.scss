@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i,700&display=swap');
+
+#root {
+    background-color: #f2f2f2;
+    min-height: 100vh;
+}
+.deneme {
+    color: green;
+    font-size:26px;
+}
+@media (min-width: 1200px) {
+    .container  {
+        max-width: 1270px !important;
+    }
+}

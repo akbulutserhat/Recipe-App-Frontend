@@ -1,0 +1,107 @@
+@import "./utilities/variables.scss";
+
+.container {
+    min-height: $full-height;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*background-color: rgba(74, 146, 204,0.15);
+    background:url('https://dr.nytcdn.com/wp-content/themes/nefistema/images/bg/bg.png') repeat; 
+    background-color: #f6f6f6; */
+    background-color: #fff;
+}
+
+.card {
+    border:1px solid rgba(41,48,59,.2);
+    background-color: #fff !important;
+
+}
+
+.heading {
+    font-weight: 400;
+    padding: 10px 40px;
+    border-bottom: 1px solid rgba(41,48,59,.1);
+    background: rgba(241,241,241,0.8);
+}
+.form {
+    padding: 20px 40px;
+}
+
+.footer {  
+    padding: 14px 40px;
+    text-align: center;
+    border-top: 1px solid rgba(41,48,59,.1);
+    background: rgba(241,241,241,0.8);
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+}
+.formGroup {
+    position: relative;
+    margin-bottom: 26px !important;
+}
+
+
+.placeholder {
+    pointer-events: none;
+    color: #424242;
+    font-size: 15px;
+    position: absolute;
+    top: 16px;
+    left: 20px;
+    transition: all 0.2s;
+}
+.inputText {
+    height: 60px !important; 
+    padding-top: 16px !important;
+    padding-left: 20px !important; 
+    padding-bottom: 0 !important;
+    background-color: #fff !important;
+    border: none;
+    border-bottom: 2px solid #eaeaea !important;
+    border-radius: 0 !important;
+}
+.inputText:focus {
+    background-color: #fff !important;
+    box-shadow: none !important;
+}
+.inputText:focus ~ .placeholder,
+.inputText:not(:placeholder-shown) ~ .placeholder
+{   top: 6px;
+    font-size: 11.5px;
+}
+.submitBtn {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 0;
+}
+.formCheckBoxContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.formError {
+    font-size: 11px;
+    color: #fe2d5b;
+}
+.authFailedMessage {
+    margin-top: 10px;
+    color: #fe2d5b;
+    font-size: 15px;
+}
+@media(max-width: 768px) {
+    .heading {
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .inputText {
+        border-bottom-width: 2px !important;
+    }
+}

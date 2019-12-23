@@ -1,0 +1,103 @@
+@import "./utilities/variables.scss";
+$font-family-title: 'Roboto', sans-serif;
+
+
+@media (max-width: 600px) {
+    .center  {
+        text-align: start;
+    }
+}
+.container {
+    padding: $component-container-padding;
+    .recipeContainer {
+        .title {
+            margin-bottom: 30px;
+            font-family: $font-family-title;
+            color: #9b252e;
+        }
+        .imgContainer {
+            img {
+                width: 100%;
+                max-height: 50vh;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                border: 1px solid #ced4da;;
+    
+            }
+        }
+        .information {
+            display: flex;
+            flex-wrap: wrap;
+            border-bottom-left-radius: 2px;
+            border-bottom-right-radius: 2px;
+            border: 1px solid #ced4da;;
+            background-color: #e6e6e6;
+            div {
+                padding: 8px 8px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 20%;
+                color: #494949;
+
+            }
+            @media (max-width: 500px) {
+                div  {
+                    width: 50%;
+                    .text {
+                        margin-top: 3px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .ingredients {
+            margin-top: 10px;
+            padding: 22px 25px;
+            .ingredientsTitle {
+                font-family: $font-family-title;
+            }
+            ul.ingredientsList {
+                list-style: none;
+                padding: 0;
+                li {
+                    padding: 12px;
+                }
+            }
+        }
+        .directions {
+            padding: 22px 25px;
+            .directionsTitle {
+                font-family: $font-family-title;
+            }
+            ol.recipeDirectionsList {
+                list-style: none;
+                counter-reset: my-awesome-counter;
+                flex-wrap: wrap;
+                padding: 0 !important;
+                li {
+                    padding: 6px 0px;
+                    counter-increment: my-awesome-counter;
+                    display: flex;
+                    align-items: center;
+                    font-size: 1rem;
+                    margin-bottom: 0.5rem;
+                }
+                li::before {
+                    content: "0" counter(my-awesome-counter);
+                    font-weight: bold;
+                    font-size: 2.4rem;
+                    margin-right: 1rem;
+                    font-style: italic;
+                    font-family: 'Abril Fatface', serif;
+                    line-height: 1;
+                  }
+                  
+            }
+            
+        }
+      
+    }
+}

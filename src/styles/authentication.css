@@ -1,0 +1,18 @@
+.auth-input-error {
+    border-bottom-color: #fe2d5b !important;
+}
+.auth-alert {
+    margin: 12px;
+    padding-left: 40px;
+}
+.auth-alert.alert-danger {
+    color: #a94442;
+}
+
+@media(max-width: 768px) {
+    .auth-input-error {
+        border-bottom-width: 2px !important;
+    }
+}
+
+

@@ -1,0 +1,172 @@
+@import "./utilities/variables.scss";
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i,700&display=swap');
+
+$navbar-bg-color: #fff;
+$navitem-color: $color-primary;
+$navitem-color-secondary: $color-secondary;
+$navitem-font-family: Merriweather,serif;
+
+$not-box-shadow: none !important;
+#navbar {
+    background-color: $navbar-bg-color;
+    @media(min-width: 992px) {
+        
+    }
+    .container {
+        .navbar-toggler {
+            background-color: $navitem-color;
+            &:focus {
+                outline: none;
+
+            }
+            .toggler-icon {
+                color: #fff;
+                font-size: 1.3em;
+            }
+        }
+        @media(min-width: 992px) {
+        }
+        .navbar-brand.mobile-brand img{
+            height: 49px;
+        }
+        .navbar-collapse {
+            @media(min-width: 992px) {
+                .navbar-brand.desktop-brand {
+                    img {
+                        height: 60px;
+                    }
+                }
+            }
+            @media(min-width: 1280px) {
+                .navbar-brand.desktop-brand img{
+                    height: 74px;
+                }
+            }
+            .nav-item {
+                @media(max-width: 992px) {
+                    margin-top: 10px;
+                }
+                .account {
+                    display: flex;
+                    align-items: center;
+                    .login-icon {
+                        font-size: 40px;
+                        color: $navitem-color;
+                        &:hover {
+                            color: $navitem-color-secondary;
+                        }
+                    }
+                    .signup-link {
+                        font-family: $navitem-font-family;
+                        font-size: 1.1em;
+                        font-weight: 600;
+                        color: $navitem-color;
+                        text-decoration: none;
+                        &:hover {
+                            color: $navitem-color-secondary;
+                        }
+                    }
+                }
+                &.authenticated-user {
+                    .authenticated-user-toggler {
+                        font-family: $navitem-font-family;
+                        font-size: 1.1em;
+                        font-weight: 700;
+                        color: $navitem-color;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                    }
+                    .authenticated-user-menu {
+                        border-color: transparent;
+                        top: 60px;
+                        background-color: $navbar-bg-color !important;
+                        border-radius: 0;
+                        .nav-link {
+                            border-radius: 2px;
+                            color: $navitem-color;
+                            font-family: $navitem-font-family;
+                            font-size: 1em;
+                            font-weight: 700 !important;
+                            &:active {
+                                background-color:$navitem-color;
+                                color: #fff;
+                            }
+                            /*&:hover {
+                                background-color: #f8f9fa;
+                            }*/
+                         
+                        }
+                    }
+                }
+            }
+            .search {
+                .search-box {
+                    position: relative;
+                   .search-box-input {
+                    box-shadow: $not-box-shadow;
+                    padding-top: 25px;
+                    padding-bottom: 25px;
+                    color: $navitem-color-secondary;
+                    font-family: $navitem-font-family;
+                    font-weight: 700;
+                    font-size: 1em;
+                    padding-left: 55px;
+                    border: 1.2px solid #e5e5e5;
+                    border-radius: 0;
+                        &::-webkit-input-placeholder { /* Edge */
+                            font-style: italic !important;
+                            color: $navitem-color;
+                            font-size: 14px !important;
+                          }
+                          
+                        &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                            font-style: italic !important; 
+                            color: $navitem-color;
+                            font-size: 14px !important;
+
+                          }
+                          
+                        &::placeholder {
+                            font-style: italic !important;
+                            color: $navitem-color;
+                            font-size: 14px !important;
+
+                          }
+                        &:focus {
+                            &~.search-box-btn {
+                                .search-btn-icon {
+                                    color: $navitem-color-secondary;
+                                }
+                            }
+                            
+                        }
+                   }
+                    .search-box-btn {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        height: 100%;
+                        .search-btn-icon {
+                            font-size: 2em;
+                            color: $navitem-color;                           
+                        }
+                    }
+                   
+                }
+                @media(max-width: 992px) {
+                    .search-box{
+                        margin-top: 20px;
+                        width: 100%;
+                        .search-box-input {
+                            width: 100%;
+                       }
+                    }
+    
+                }
+            }
+        }
+    }
+    
+}
