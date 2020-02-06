@@ -1,5 +1,19 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### This project was completed by 2 people.
+  - Me
+  - Alptekin Gürsoy  https://github.com/alptekingursoy 
+  
+## Screenshots
+![register](https://user-images.githubusercontent.com/45499853/73955842-142f3380-4915-11ea-8c85-93be10db3041.jpg)
+
+![login](https://user-images.githubusercontent.com/45499853/73955902-2b6e2100-4915-11ea-95b6-45d5231c4923.jpg)
+
+![recipes](https://user-images.githubusercontent.com/45499853/73955921-3628b600-4915-11ea-97d0-c9cd0e8727a6.jpg)
+
+![recipe-detail-1](https://user-images.githubusercontent.com/45499853/73955946-417be180-4915-11ea-92d9-034c03b20ec2.jpg)
+![recipe-detail-2](https://user-images.githubusercontent.com/45499853/73955985-4d67a380-4915-11ea-8b6b-b818c3001742.jpg)
+
 ## Available Scripts
 
 In the project directory, you can run:
