@@ -1,8 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### This project was completed by 2 people.
-  - Me
-  - Alptekin Gürsoy  https://github.com/alptekingursoy 
   
 ## Screenshots
 ![register](https://user-images.githubusercontent.com/45499853/73955842-142f3380-4915-11ea-8c85-93be10db3041.jpg)
